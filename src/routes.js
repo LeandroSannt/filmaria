@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Switch} from 'react-router-dom'
+import Header from './components/Header'
 
 import Home from './pages/home'
 import Filme from './pages/Filme'
-import Header from './components/Header'
+import Favoritos from './pages/Favoritos'
 
 
 const Routes = () => {
@@ -12,6 +13,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component = {Home}/>
         <Route exact path="/filme/:id" component = {Filme}/>
+        <Route exact patch ="/favoritos" component={Favoritos}/>
       </Switch>
     </BrowserRouter>
   )
